@@ -7,7 +7,7 @@ export default function CartPage() {
   const { cartItems, removeFromCart, updateQuantity } = useCart();
 
   const subtotal = cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
-  const deliveryFee = 299;
+  const deliveryFee = 50;
   const total = subtotal + deliveryFee;
 
   if (cartItems.length === 0) {

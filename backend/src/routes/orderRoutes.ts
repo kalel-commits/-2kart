@@ -43,7 +43,7 @@ router.post('/', auth, async (req: Request, res: Response, next: NextFunction): 
     }
 
     // Add delivery fee
-    const deliveryFee = 50; // Fixed delivery fee for now
+    const deliveryFee = 50; // Fixed delivery fee
     totalAmount += deliveryFee;
 
     // Create order

@@ -6,7 +6,7 @@ import { memo } from 'react';
 
 const CartIcon = memo(() => (
   <svg
-    className="w-6 h-6 text-gray-600 hover:text-green-600"
+    className="w-6 h-6 text-gray-600 hover:text-gray-800"
     fill="none"
     stroke="currentColor"
     viewBox="0 0 24 24"
@@ -30,18 +30,18 @@ const Navbar = memo(() => {
     <nav className="bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="text-2xl font-bold text-green-600">
+          <Link href="/" className="text-2xl font-bold text-gray-800">
             +2KART
           </Link>
           
           <div className="flex items-center space-x-4">
-            <Link href="/categories" className="text-gray-600 hover:text-green-600">
+            <Link href="/categories" className="text-gray-600 hover:text-gray-800">
               Categories
             </Link>
             <Link href="/cart" className="relative">
               <CartIcon />
               {itemCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-green-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                <span className="absolute -top-2 -right-2 bg-black text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
                   {itemCount}
                 </span>
               )}
